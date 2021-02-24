@@ -30,9 +30,14 @@ class TastyAPI {
     }
     
     private func buildRequest(url requestUrl: String) -> URLRequest? {
+        if Environment.tasty_api_key.isEmpty {
+            print("TASTY_API_KEY is empty. \nPlease fill in the tasty_api_key credentials inside Configs/Development.xcconfig.")
+            return nil
+        }
+        
         if let url = URL(string: requestUrl) {
             var request = URLRequest(url: url)
-
+            
             // Set headers
             request.setValue(Environment.tasty_api_key, forHTTPHeaderField: "x-rapidapi-key")
             request.setValue("tasty.p.rapidapi.com", forHTTPHeaderField: "x-rapidapi-host")

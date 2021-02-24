@@ -113,3 +113,6 @@ Temporary Items
 
 # Mac OSX
 .DS_Store
+
+# Environment variables
+*/Development.xcconfig
