@@ -65,22 +65,42 @@
         <scene sceneID="7Iq-bW-HTo">
             <objects>
                 <viewController id="rQq-98-AVe" customClass="RecipeDetailViewController" customModule="SwiftRecipes" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5UL-fs-xvM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="yey-7f-Uir">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                        <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Receptnaam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rls-wa-6Mg">
-                                <rect key="frame" x="60" y="158" width="81" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Lobster-Regular" family="Lobster" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yzo-pt-yL2">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRx-O6-AAO">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QnS-uc-vbx">
+                                        <rect key="frame" x="0.0" y="20.5" width="414" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="fON-x4-Lp9"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
+                        <viewLayoutGuide key="safeArea" id="jfn-xl-XcD"/>
+                        <constraints>
+                            <constraint firstItem="yzo-pt-yL2" firstAttribute="bottom" secondItem="aIl-r2-gHA" secondAttribute="bottom" id="5q7-Ty-6s0"/>
+                            <constraint firstItem="yzo-pt-yL2" firstAttribute="width" secondItem="o7d-pF-owB" secondAttribute="width" id="FHO-ya-l0w"/>
+                            <constraint firstItem="yzo-pt-yL2" firstAttribute="leading" secondItem="aIl-r2-gHA" secondAttribute="leading" id="b5n-xw-aS3"/>
+                            <constraint firstItem="yzo-pt-yL2" firstAttribute="trailing" secondItem="aIl-r2-gHA" secondAttribute="trailing" id="hZD-2r-FDx"/>
+                            <constraint firstItem="yzo-pt-yL2" firstAttribute="top" secondItem="aIl-r2-gHA" secondAttribute="top" id="mKz-Lp-zGv"/>
+                        </constraints>
+                        <viewLayoutGuide key="contentLayoutGuide" id="aIl-r2-gHA"/>
+                        <viewLayoutGuide key="frameLayoutGuide" id="o7d-pF-owB"/>
+                    </scrollView>
                     <navigationItem key="navigationItem" id="fzH-XO-upk"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="1500"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1H2-tT-i8l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

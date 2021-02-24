@@ -41,4 +41,6 @@ TastyAPI().fetchRecipes(query: "from=0&size=20&tags=under_30_minutes") { recipes
 - [Creating the basic UI: UITabBarController – Whitehouse Petitions, part 2](https://www.youtube.com/watch?v=7iuRj8YNAxM&feature=emb_logo)
 - [How to repeat a string](https://www.hackingwithswift.com/example-code/strings/how-to-repeat-a-string)
 - [Computed Properties](https://docs.swift.org/swift-book/LanguageGuide/Properties.html)
+- [Adding a Custom Font to Your App](https://developer.apple.com/documentation/uikit/text_display_and_fonts/adding_a_custom_font_to_your_app)
 - [Change tab bar item selected color in a storyboard](https://stackoverflow.com/questions/26835148/change-tab-bar-item-selected-color-in-a-storyboard)
+- [Change color of Back button in navigation bar](https://stackoverflow.com/questions/28733936/change-color-of-back-button-in-navigation-bar)
