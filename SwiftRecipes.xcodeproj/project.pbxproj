@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A46289C25E6801C00D8510B /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A46289B25E6801C00D8510B /* UIColorExtension.swift */; };
 		1A72291A25E650FE00AC1A26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A72291925E650FE00AC1A26 /* AppDelegate.swift */; };
 		1A72291C25E650FE00AC1A26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A72291B25E650FE00AC1A26 /* SceneDelegate.swift */; };
 		1A72291E25E650FE00AC1A26 /* RecipeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A72291D25E650FE00AC1A26 /* RecipeListViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A46289B25E6801C00D8510B /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		1A72291625E650FE00AC1A26 /* SwiftRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A72291925E650FE00AC1A26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A72291B25E650FE00AC1A26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +46,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A46289E25E6818300D8510B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1A46289B25E6801C00D8510B /* UIColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		1A72290D25E650FE00AC1A26 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +73,7 @@
 		1A72291825E650FE00AC1A26 /* SwiftRecipes */ = {
 			isa = PBXGroup;
 			children = (
+				1A46289E25E6818300D8510B /* Extensions */,
 				1A72293C25E6697A00AC1A26 /* Configs */,
 				1A72293725E661B600AC1A26 /* Services */,
 				1A72293125E6527B00AC1A26 /* Controllers */,
@@ -198,6 +209,7 @@
 			files = (
 				1A72291E25E650FE00AC1A26 /* RecipeListViewController.swift in Sources */,
 				1A72294125E66B8D00AC1A26 /* Environment.swift in Sources */,
+				1A46289C25E6801C00D8510B /* UIColorExtension.swift in Sources */,
 				1A72291A25E650FE00AC1A26 /* AppDelegate.swift in Sources */,
 				1A72293925E661C700AC1A26 /* TastyAPI.swift in Sources */,
 				1A72291C25E650FE00AC1A26 /* SceneDelegate.swift in Sources */,

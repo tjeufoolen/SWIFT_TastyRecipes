@@ -3,7 +3,7 @@
 //  SwiftRecipes
 //
 //  Created by Tjeu Foolen on 24/02/2021.
-//  Originally from https://thoughtbot.com/blog/let-s-setup-your-ios-environments
+//  Referenced from https://thoughtbot.com/blog/let-s-setup-your-ios-environments
 //
 
 import Foundation
