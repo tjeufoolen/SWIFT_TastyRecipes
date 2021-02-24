@@ -11,6 +11,23 @@ Final assignment project for the mobile development iOS course (MBDIOS).
 3. Specify api token inside <add-explanation-here>
 4. Build the project and enjoy! :tada:
 
+## TastyAPI class usage
+Retrieve one single recipe
+```swift
+TastyAPI().fetchRecipe(id: 7109) { recipe in
+    if let recipe = recipe {
+        print(recipe)
+    }
+}
+```
+
+Retrieve first 20 recipes that are under 30 minutes to make
+```swift
+TastyAPI().fetchRecipes(query: "from=0&size=20&tags=under_30_minutes") { recipes in
+    print(recipes)
+}
+```
+
 ## Author
 - [Tjeu Foolen](https://github.com/tjeufoolen)
 

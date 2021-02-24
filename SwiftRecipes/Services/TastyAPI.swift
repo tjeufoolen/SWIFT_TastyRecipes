@@ -12,8 +12,8 @@ class TastyAPI {
     private let baseUrl = "https://tasty.p.rapidapi.com"
     private let decoder = JSONDecoder()
     
-    public func fetchRecipes(completionHandler: @escaping ((_ recipes: [Recipe]) -> Void)) {
-        if let request = buildRequest(url: "\(baseUrl)/recipes/list?from=0&size=20&tags=under_30_minutes") {
+    public func fetchRecipes(query: String, completionHandler: @escaping ((_ recipes: [Recipe]) -> Void)) {
+        if let request = buildRequest(url: "\(baseUrl)/recipes/list?\(query)") {
             URLSession.shared.dataTask(with: request) { data, response, error in
                 do {
                     if let receivedData = data {
