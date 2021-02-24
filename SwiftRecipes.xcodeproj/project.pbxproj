@@ -17,6 +17,8 @@
 		1A72293325E653E000AC1A26 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A72293225E653E000AC1A26 /* Recipe.swift */; };
 		1A72293925E661C700AC1A26 /* TastyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A72293825E661C700AC1A26 /* TastyAPI.swift */; };
 		1A72294125E66B8D00AC1A26 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A72294025E66B8D00AC1A26 /* Environment.swift */; };
+		1AAE0EA325E68E0F00326377 /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE0EA225E68E0F00326377 /* FavoritesListViewController.swift */; };
+		1ADA651725E687F200019B4D /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA651625E687F200019B4D /* RecipeDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		1A72293825E661C700AC1A26 /* TastyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastyAPI.swift; sourceTree = "<group>"; };
 		1A72293D25E6698F00AC1A26 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		1A72294025E66B8D00AC1A26 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		1AAE0EA225E68E0F00326377 /* FavoritesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListViewController.swift; sourceTree = "<group>"; };
+		1ADA651625E687F200019B4D /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				1A72291D25E650FE00AC1A26 /* RecipeListViewController.swift */,
+				1ADA651625E687F200019B4D /* RecipeDetailViewController.swift */,
+				1AAE0EA225E68E0F00326377 /* FavoritesListViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -209,6 +215,8 @@
 			files = (
 				1A72291E25E650FE00AC1A26 /* RecipeListViewController.swift in Sources */,
 				1A72294125E66B8D00AC1A26 /* Environment.swift in Sources */,
+				1ADA651725E687F200019B4D /* RecipeDetailViewController.swift in Sources */,
+				1AAE0EA325E68E0F00326377 /* FavoritesListViewController.swift in Sources */,
 				1A46289C25E6801C00D8510B /* UIColorExtension.swift in Sources */,
 				1A72291A25E650FE00AC1A26 /* AppDelegate.swift in Sources */,
 				1A72293925E661C700AC1A26 /* TastyAPI.swift in Sources */,
