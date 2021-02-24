@@ -13,3 +13,9 @@ Final assignment project for the mobile development iOS course (MBDIOS).
 
 ## Author
 - [Tjeu Foolen](https://github.com/tjeufoolen)
+
+## Source references
+- [Ultimate Guide to JSON Parsing with Swift](https://benscheirman.com/2017/06/swift-json/)
+- [function with dataTask returning a value](https://stackoverflow.com/questions/40014830/function-with-datatask-returning-a-value)
+- [What is escaping closure and when to use it](https://fluffy.es/what-is-escaping-closure/)
+- [Let's Set Up Your iOS Environments](https://thoughtbot.com/blog/let-s-setup-your-ios-environments)

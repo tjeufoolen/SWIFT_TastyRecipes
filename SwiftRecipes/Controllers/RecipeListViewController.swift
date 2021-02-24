@@ -12,8 +12,14 @@ class RecipeListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        TastyAPI().fetchRecipes() { recipes in
-            print(recipes)
+//        TastyAPI().fetchRecipes() { recipes in
+//            print(recipes)
+//        }
+        
+        TastyAPI().fetchRecipe(id: 7109) { recipe in
+            if let recipe = recipe {
+                print(recipe)
+            }
         }
     }
 

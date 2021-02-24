@@ -29,6 +29,24 @@ class TastyAPI {
         completionHandler([])
     }
     
+    public func fetchRecipe(id recipeId: Int, completionHandler: @escaping ((_ recipe: Recipe?) -> Void)) {
+        if let request = buildRequest(url: "\(baseUrl)/recipes/detail?id=\(recipeId)") {
+            URLSession.shared.dataTask(with: request) { data, response, error in
+                do {
+                    if let receivedData = data {
+                        let recipe = try self.decoder.decode(Recipe.self, from: receivedData)
+                        return completionHandler(recipe)
+                    }
+                } catch let error {
+                    print("Fetch failed: \(error.localizedDescription)")
+                }
+            }.resume()
+        }
+        // if we got here it means that something went wrong with the request,
+        // or that the recipe with specified id does not exist
+        completionHandler(nil)
+    }
+    
     private func buildRequest(url requestUrl: String) -> URLRequest? {
         if Environment.tasty_api_key.isEmpty {
             print("TASTY_API_KEY is empty. \nPlease fill in the tasty_api_key credentials inside Configs/Development.xcconfig.")
