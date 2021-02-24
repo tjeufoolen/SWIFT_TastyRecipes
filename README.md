@@ -4,6 +4,7 @@ Final assignment project for the mobile development iOS course (MBDIOS).
 ## Prerequisites
 - XCode 12.4
 - iOS 14.4
+- [Tasty API Token](https://rapidapi.com/apidojo/api/tasty/endpoints)
 
 ## Getting Started
 1. Clone this project
