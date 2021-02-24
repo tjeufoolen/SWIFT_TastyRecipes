@@ -8,7 +8,7 @@ Final assignment project for the mobile development iOS course (MBDIOS).
 ## Getting Started
 1. Clone this project
 2. Open this project with XCode
-3. Specify api token inside <add-explanation-here>
+3. Specify tasty api token inside `SwiftRecipes/Configs/Development.xcconfig`
 4. Build the project and enjoy! :tada:
 
 ## TastyAPI class usage
