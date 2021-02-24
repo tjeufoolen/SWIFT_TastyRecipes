@@ -115,4 +115,4 @@ Temporary Items
 .DS_Store
 
 # Environment variables
-*/Development.xcconfig
+SwiftRecipes/Configs/Development.xcconfig
