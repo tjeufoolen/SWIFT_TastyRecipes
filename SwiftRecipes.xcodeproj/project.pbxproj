@@ -18,6 +18,7 @@
 		1A72293925E661C700AC1A26 /* TastyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A72293825E661C700AC1A26 /* TastyAPI.swift */; };
 		1A72294125E66B8D00AC1A26 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A72294025E66B8D00AC1A26 /* Environment.swift */; };
 		1AAE0EA325E68E0F00326377 /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE0EA225E68E0F00326377 /* FavoritesListViewController.swift */; };
+		1AAE0EA725E69D1600326377 /* Lobster-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AAE0EA625E69D0A00326377 /* Lobster-Regular.ttf */; };
 		1ADA651725E687F200019B4D /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA651625E687F200019B4D /* RecipeDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		1A72293D25E6698F00AC1A26 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		1A72294025E66B8D00AC1A26 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		1AAE0EA225E68E0F00326377 /* FavoritesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListViewController.swift; sourceTree = "<group>"; };
+		1AAE0EA625E69D0A00326377 /* Lobster-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lobster-Regular.ttf"; sourceTree = "<group>"; };
 		1ADA651625E687F200019B4D /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +95,7 @@
 		1A72292E25E6525F00AC1A26 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1AAE0EA525E69CF200326377 /* Fonts */,
 				1A72291925E650FE00AC1A26 /* AppDelegate.swift */,
 				1A72291B25E650FE00AC1A26 /* SceneDelegate.swift */,
 				1A72292425E650FF00AC1A26 /* LaunchScreen.storyboard */,
@@ -141,6 +144,14 @@
 				1A72294025E66B8D00AC1A26 /* Environment.swift */,
 			);
 			path = Configs;
+			sourceTree = "<group>";
+		};
+		1AAE0EA525E69CF200326377 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1AAE0EA625E69D0A00326377 /* Lobster-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A72292625E650FF00AC1A26 /* LaunchScreen.storyboard in Resources */,
+				1AAE0EA725E69D1600326377 /* Lobster-Regular.ttf in Resources */,
 				1A72292325E650FF00AC1A26 /* Assets.xcassets in Resources */,
 				1A72292125E650FE00AC1A26 /* Main.storyboard in Resources */,
 			);

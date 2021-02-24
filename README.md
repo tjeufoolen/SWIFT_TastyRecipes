@@ -41,3 +41,4 @@ TastyAPI().fetchRecipes(query: "from=0&size=20&tags=under_30_minutes") { recipes
 - [Creating the basic UI: UITabBarController – Whitehouse Petitions, part 2](https://www.youtube.com/watch?v=7iuRj8YNAxM&feature=emb_logo)
 - [How to repeat a string](https://www.hackingwithswift.com/example-code/strings/how-to-repeat-a-string)
 - [Computed Properties](https://docs.swift.org/swift-book/LanguageGuide/Properties.html)
+- [Change tab bar item selected color in a storyboard](https://stackoverflow.com/questions/26835148/change-tab-bar-item-selected-color-in-a-storyboard)

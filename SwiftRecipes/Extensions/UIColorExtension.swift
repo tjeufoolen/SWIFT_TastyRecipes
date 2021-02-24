@@ -11,17 +11,20 @@ import UIKit
 @objc public extension UIColor {
     static let primary = UIColor.color(named: "PrimaryColor")
     static let darkerPrimary = UIColor.color(named: "DarkerPrimaryColor")
+    static let darkestPrimary = UIColor.color(named: "DarkestPrimaryColor")
     static let accent = UIColor.color(named: "AccentColor")
     
     static let allColors: [UIColor] = [
         primary,
         darkerPrimary,
+        darkestPrimary,
         accent
     ]
     
     static let allNames: [String] = [
         "PrimaryColor",
         "DarkerPrimaryColor",
+        "DarkestPrimaryColor",
         "AccentColor",
     ]
     
