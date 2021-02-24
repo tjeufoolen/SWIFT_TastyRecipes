@@ -32,6 +32,11 @@ struct Recipe : Codable {
 struct UserRating : Codable {
     var count_positive: Int
     var count_negative: Int
+    var count: Int {
+        get {
+            return count_positive + count_negative
+        }
+    }
     var score: Double
 }
 

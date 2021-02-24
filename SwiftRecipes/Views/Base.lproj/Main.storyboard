@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="XFZ-gl-DGW" kind="relationship" relationship="rootViewController" id="gZa-z0-I7y"/>
+                        <segue destination="ZX4-us-bRM" kind="relationship" relationship="rootViewController" id="bkj-Rx-YWS"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CAA-Rr-xQb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -59,30 +59,49 @@
             <point key="canvasLocation" x="1504" y="-579"/>
         </scene>
         <!--Recipes-->
-        <scene sceneID="C44-Jd-724">
+        <scene sceneID="lcb-52-xZR">
             <objects>
-                <viewController id="XFZ-gl-DGW" customClass="RecipeListViewController" customModule="SwiftRecipes" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="uSh-mN-Xfn">
+                <tableViewController id="ZX4-us-bRM" customClass="RecipeListViewController" customModule="SwiftRecipes" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ARD-vO-GR4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdL-Md-m2y">
-                                <rect key="frame" x="240" y="144" width="40" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Detail"/>
-                                <connections>
-                                    <segue destination="rQq-98-AVe" kind="show" id="Npq-cP-Xj3"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="NEx-rM-aLG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Recipes" id="CbL-Qv-pGT"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MFK-Np-y60" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipeCell" textLabel="aJM-gD-RtY" detailTextLabel="VkE-XU-pEH" style="IBUITableViewCellStyleSubtitle" id="4cQ-hv-fXl">
+                                <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4cQ-hv-fXl" id="PLR-oB-jMS">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aJM-gD-RtY">
+                                            <rect key="frame" x="20" y="10" width="33" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VkE-XU-pEH">
+                                            <rect key="frame" x="20" y="31.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ZX4-us-bRM" id="TeK-AJ-jEA"/>
+                            <outlet property="delegate" destination="ZX4-us-bRM" id="Y6g-dI-JWc"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Recipes" id="K2R-aG-2GO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mQu-9W-z2Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="707" y="-579"/>
+            <point key="canvasLocation" x="704" y="-579"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="2RD-Mo-uBY">
