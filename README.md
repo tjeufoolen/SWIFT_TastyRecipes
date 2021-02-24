@@ -37,3 +37,4 @@ TastyAPI().fetchRecipes(query: "from=0&size=20&tags=under_30_minutes") { recipes
 - [What is escaping closure and when to use it](https://fluffy.es/what-is-escaping-closure/)
 - [Let's Set Up Your iOS Environments](https://thoughtbot.com/blog/let-s-setup-your-ios-environments)
 - [How to turn XCode color assets (.xcassets) into UIColor extension](https://medium.com/flawless-app-stories/how-to-turn-xcode-color-assets-xcassets-into-uicolor-extension-3dc28953d4d3)
+- [Creating the basic UI: UITabBarController – Whitehouse Petitions, part 2](https://www.youtube.com/watch?v=7iuRj8YNAxM&feature=emb_logo)
