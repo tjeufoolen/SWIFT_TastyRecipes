@@ -19,6 +19,7 @@
 		1A72294125E66B8D00AC1A26 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A72294025E66B8D00AC1A26 /* Environment.swift */; };
 		1AAE0EA325E68E0F00326377 /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE0EA225E68E0F00326377 /* FavoritesListViewController.swift */; };
 		1AAE0EA725E69D1600326377 /* Lobster-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AAE0EA625E69D0A00326377 /* Lobster-Regular.ttf */; };
+		1AAE0EAB25E6B40800326377 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE0EAA25E6B40800326377 /* PaddingLabel.swift */; };
 		1ADA651725E687F200019B4D /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA651625E687F200019B4D /* RecipeDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		1A72294025E66B8D00AC1A26 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		1AAE0EA225E68E0F00326377 /* FavoritesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListViewController.swift; sourceTree = "<group>"; };
 		1AAE0EA625E69D0A00326377 /* Lobster-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lobster-Regular.ttf"; sourceTree = "<group>"; };
+		1AAE0EAA25E6B40800326377 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		1ADA651625E687F200019B4D /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				1A72293225E653E000AC1A26 /* Recipe.swift */,
+				1AAE0EAA25E6B40800326377 /* PaddingLabel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				1AAE0EA325E68E0F00326377 /* FavoritesListViewController.swift in Sources */,
 				1A46289C25E6801C00D8510B /* UIColorExtension.swift in Sources */,
 				1A72291A25E650FE00AC1A26 /* AppDelegate.swift in Sources */,
+				1AAE0EAB25E6B40800326377 /* PaddingLabel.swift in Sources */,
 				1A72293925E661C700AC1A26 /* TastyAPI.swift in Sources */,
 				1A72291C25E650FE00AC1A26 /* SceneDelegate.swift in Sources */,
 				1A72293325E653E000AC1A26 /* Recipe.swift in Sources */,

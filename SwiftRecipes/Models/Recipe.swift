@@ -17,6 +17,27 @@ struct Recipe : Codable {
     var thumbnail_url: URL
     var video_url: URL?
     
+    var credits: [Creator]?
+    
+    var sections: [IngredientSection]?
+    var ingredients: [String] {
+        get {
+            var items: [String] = []
+            if let sections = sections {
+                for section in sections {
+                    if let components = section.components {
+                        for component in components {
+                            if let text = component.raw_text {
+                                items.append(text)
+                            }
+                        }
+                    }
+                }
+            }
+            return items
+        }
+    }
+    
     var num_servings: Int?
     
     var tips_and_ratings_enabled: Bool?
@@ -27,6 +48,20 @@ struct Recipe : Codable {
     var total_time_minutes: Int?
     
     var nutrition: Nutrition?
+}
+
+struct Creator : Codable {
+    var name: String?
+    var type: String?
+}
+
+struct IngredientSection: Codable {
+    var name: String?
+    var components: [IngredientComponent]?
+}
+
+struct IngredientComponent: Codable {
+    var raw_text: String?
 }
 
 struct UserRating : Codable {
