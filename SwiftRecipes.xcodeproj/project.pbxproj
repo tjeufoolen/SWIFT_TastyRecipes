@@ -79,8 +79,8 @@
 				1A72293125E6527B00AC1A26 /* Controllers */,
 				1A72293025E6527700AC1A26 /* Models */,
 				1A72292F25E6527100AC1A26 /* Views */,
-				1A72292225E650FF00AC1A26 /* Assets.xcassets */,
 				1A72292E25E6525F00AC1A26 /* Resources */,
+				1A72292225E650FF00AC1A26 /* Assets.xcassets */,
 				1A72292725E650FF00AC1A26 /* Info.plist */,
 			);
 			path = SwiftRecipes;
