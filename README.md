@@ -44,3 +44,6 @@ TastyAPI().fetchRecipes(query: "from=0&size=20&tags=under_30_minutes") { recipes
 - [Adding a Custom Font to Your App](https://developer.apple.com/documentation/uikit/text_display_and_fonts/adding_a_custom_font_to_your_app)
 - [Change tab bar item selected color in a storyboard](https://stackoverflow.com/questions/26835148/change-tab-bar-item-selected-color-in-a-storyboard)
 - [Change color of Back button in navigation bar](https://stackoverflow.com/questions/28733936/change-color-of-back-button-in-navigation-bar)
+- [Adding Padding To A Stack View](https://useyourloaf.com/blog/adding-padding-to-a-stack-view/)
+- [UIScrollView with Content Layout Guides](https://spin.atomicobject.com/2020/03/23/uiscrollview-content-layout-guides/)
+- [Creating a Free Form View Controller](https://guides.codepath.com/ios/Creating-a-Free-Form-View-Controller)
