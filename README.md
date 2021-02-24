@@ -14,7 +14,7 @@ Final assignment project for the mobile development iOS course (MBDIOS).
 ## TastyAPI class usage
 Retrieve one single recipe
 ```swift
-TastyAPI().fetchRecipe(id: 7109) { recipe in
+TastyAPI().fetchSingleRecipe(id: 7109) { recipe in
     if let recipe = recipe {
         print(recipe)
     }

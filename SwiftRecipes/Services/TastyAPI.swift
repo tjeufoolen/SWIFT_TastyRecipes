@@ -14,33 +14,29 @@ class TastyAPI {
     
     public func fetchRecipes(query: String, completionHandler: @escaping ((_ recipes: [Recipe]) -> Void)) {
         if let request = buildRequest(url: "\(baseUrl)/recipes/list?\(query)") {
-            URLSession.shared.dataTask(with: request) { data, response, error in
+            executeRequest(request) { data in
                 do {
-                    if let receivedData = data {
-                        let recipeData = try self.decoder.decode(RecipeData.self, from: receivedData)
-                        return completionHandler(recipeData.results)
-                    }
+                    let recipeData = try self.decoder.decode(RecipeData.self, from: data)
+                    return completionHandler(recipeData.results)
                 } catch let error {
-                    print("Fetch failed: \(error.localizedDescription)")
+                    print("Error occured while decoding request data: \(error.localizedDescription)")
                 }
-            }.resume()
+            }
         }
         // if we got here it means that something went wrong with the request
         completionHandler([])
     }
     
-    public func fetchRecipe(id recipeId: Int, completionHandler: @escaping ((_ recipe: Recipe?) -> Void)) {
+    public func fetchSingleRecipe(id recipeId: Int, completionHandler: @escaping ((_ recipe: Recipe?) -> Void)) {
         if let request = buildRequest(url: "\(baseUrl)/recipes/detail?id=\(recipeId)") {
-            URLSession.shared.dataTask(with: request) { data, response, error in
+            executeRequest(request) { data in
                 do {
-                    if let receivedData = data {
-                        let recipe = try self.decoder.decode(Recipe.self, from: receivedData)
-                        return completionHandler(recipe)
-                    }
+                    let recipe = try self.decoder.decode(Recipe.self, from: data)
+                    return completionHandler(recipe)
                 } catch let error {
-                    print("Fetch failed: \(error.localizedDescription)")
+                    print("Error occured while decoding request data: \(error.localizedDescription)")
                 }
-            }.resume()
+            }
         }
         // if we got here it means that something went wrong with the request,
         // or that the recipe with specified id does not exist
@@ -66,4 +62,11 @@ class TastyAPI {
         return nil;
     }
     
+    private func executeRequest(_ request: URLRequest, completionHandler: @escaping ((_ data: Data) -> Void)) {
+        URLSession.shared.dataTask(with: request) { data, response, error in
+           if let receivedData = data {
+                completionHandler(receivedData)
+            }
+        }.resume()
+    }
 }
