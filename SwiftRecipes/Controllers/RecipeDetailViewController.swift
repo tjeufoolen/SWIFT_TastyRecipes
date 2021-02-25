@@ -13,8 +13,11 @@ class RecipeDetailViewController: UIViewController {
 
     @IBOutlet weak var nameLabel: PaddingLabel!
     @IBOutlet weak var creditsLabel: PaddingLabel!
+    @IBOutlet weak var ingredientsLabel: PaddingLabel!
     @IBOutlet weak var ingredientsStack: UIStackView!
+    @IBOutlet weak var instructionsLabel: PaddingLabel!
     @IBOutlet weak var instructionsStack: UIStackView!
+    @IBOutlet weak var nutritionLabel: PaddingLabel!
     @IBOutlet weak var nutritionStack: UIStackView!
     
     override func viewDidLoad() {
@@ -46,50 +49,70 @@ class RecipeDetailViewController: UIViewController {
     }
 
     private func loadIngredients(_ recipe: Recipe) {
-        for ingredient in recipe.ingredients {
-            let label = createLabel(text: " -    \(ingredient)", color: .white, fontSize: 16, lines: 3)
-            ingredientsStack.addArrangedSubview(label)
+        if recipe.ingredients.count > 0 {
+            for ingredient in recipe.ingredients {
+                let label = createLabel(text: " -    \(ingredient)", color: .white, fontSize: 16, lines: 3)
+                ingredientsStack.addArrangedSubview(label)
+            }
+            ingredientsLabel.isHidden = false
+        } else {
+            ingredientsLabel.isHidden = true
         }
     }
 
     private func loadInstructions(_ recipe: Recipe) {
         if let instructions = recipe.instructions {
-            for index in 0..<instructions.count {
-                let instruction = instructions[index]
-                if let text = instruction.display_text {
-                    let label = createLabel(text: " \(index+1).    \(text)", color: .white, fontSize: 16, lines: 10)
-                    instructionsStack.addArrangedSubview(label)
+            if instructions.count > 0 {
+                for index in 0..<instructions.count {
+                    let instruction = instructions[index]
+                    if let text = instruction.display_text {
+                        let label = createLabel(text: " \(index+1).    \(text)", color: .white, fontSize: 16, lines: 10)
+                        instructionsStack.addArrangedSubview(label)
+                    }
                 }
+                instructionsLabel.isHidden = false
+            } else {
+                instructionsLabel.isHidden = true
             }
         }
     }
 
     private func loadNutrition(_ recipe: Recipe) {
         if let nutrition = recipe.nutrition {
+            var itemsShown: Int = 0
+            
             if let calories = nutrition.calories {
                 let row = createNutritionRow(label: "calories", value: calories)
                 nutritionStack.addArrangedSubview(row)
+                itemsShown+=1
             }
             if let sugar = nutrition.sugar {
                 let row = createNutritionRow(label: "sugar", value: sugar)
                 nutritionStack.addArrangedSubview(row)
+                itemsShown+=1
             }
             if let carbohydrates = nutrition.carbohydrates {
                 let row = createNutritionRow(label: "carbohydrates", value: carbohydrates)
                 nutritionStack.addArrangedSubview(row)
+                itemsShown+=1
             }
             if let fiber = nutrition.fiber {
                 let row = createNutritionRow(label: "fiber", value: fiber)
                 nutritionStack.addArrangedSubview(row)
+                itemsShown+=1
             }
             if let protein = nutrition.protein {
                 let row = createNutritionRow(label: "protein", value: protein)
                 nutritionStack.addArrangedSubview(row)
+                itemsShown+=1
             }
             if let fat = nutrition.fat {
                 let row = createNutritionRow(label: "fat", value: fat)
                 nutritionStack.addArrangedSubview(row)
+                itemsShown+=1
             }
+            
+            nutritionLabel.isHidden = (itemsShown == 0)
         }
     }
 

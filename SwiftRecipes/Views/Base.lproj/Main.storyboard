@@ -264,9 +264,12 @@
                     <size key="freeformSize" width="414" height="1500"/>
                     <connections>
                         <outlet property="creditsLabel" destination="GfM-aN-f8G" id="R1C-jb-Ixj"/>
+                        <outlet property="ingredientsLabel" destination="jvm-XH-2GP" id="BIB-I4-w1S"/>
                         <outlet property="ingredientsStack" destination="38Z-x2-kNt" id="eYp-pE-RmH"/>
+                        <outlet property="instructionsLabel" destination="tA9-2q-yQc" id="B0O-35-U90"/>
                         <outlet property="instructionsStack" destination="hmw-Ox-yz1" id="9dg-nr-Oun"/>
                         <outlet property="nameLabel" destination="T0Z-4N-hdi" id="1hY-Zi-8NS"/>
+                        <outlet property="nutritionLabel" destination="6d5-ir-Uqw" id="6JN-0x-kpx"/>
                         <outlet property="nutritionStack" destination="WeD-Su-dSh" id="xUi-rA-ZGZ"/>
                     </connections>
                 </viewController>
