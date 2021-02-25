@@ -11,7 +11,6 @@
 		1A72291A25E650FE00AC1A26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A72291925E650FE00AC1A26 /* AppDelegate.swift */; };
 		1A72291C25E650FE00AC1A26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A72291B25E650FE00AC1A26 /* SceneDelegate.swift */; };
 		1A72291E25E650FE00AC1A26 /* RecipeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A72291D25E650FE00AC1A26 /* RecipeListViewController.swift */; };
-		1A72292125E650FE00AC1A26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A72291F25E650FE00AC1A26 /* Main.storyboard */; };
 		1A72292325E650FF00AC1A26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A72292225E650FF00AC1A26 /* Assets.xcassets */; };
 		1A72292625E650FF00AC1A26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A72292425E650FF00AC1A26 /* LaunchScreen.storyboard */; };
 		1A72293325E653E000AC1A26 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A72293225E653E000AC1A26 /* Recipe.swift */; };
@@ -21,6 +20,7 @@
 		1AAE0EA725E69D1600326377 /* Lobster-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AAE0EA625E69D0A00326377 /* Lobster-Regular.ttf */; };
 		1AAE0EAB25E6B40800326377 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE0EAA25E6B40800326377 /* PaddingLabel.swift */; };
 		1ADA651725E687F200019B4D /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA651625E687F200019B4D /* RecipeDetailViewController.swift */; };
+		1ADC524F25E7C5FB003BE37F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A72291F25E650FE00AC1A26 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -217,7 +217,7 @@
 				1A72292625E650FF00AC1A26 /* LaunchScreen.storyboard in Resources */,
 				1AAE0EA725E69D1600326377 /* Lobster-Regular.ttf in Resources */,
 				1A72292325E650FF00AC1A26 /* Assets.xcassets in Resources */,
-				1A72292125E650FE00AC1A26 /* Main.storyboard in Resources */,
+				1ADC524F25E7C5FB003BE37F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

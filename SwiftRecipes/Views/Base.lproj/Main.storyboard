@@ -62,154 +62,217 @@
             <point key="canvasLocation" x="-87" y="147"/>
         </scene>
         <!--Recipe Detail View Controller-->
-        <scene sceneID="7Iq-bW-HTo">
+        <scene sceneID="RDR-N0-gzg">
             <objects>
-                <viewController id="rQq-98-AVe" customClass="RecipeDetailViewController" customModule="SwiftRecipes" customModuleProvider="target" sceneMemberID="viewController">
-                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="yey-7f-Uir">
+                <viewController id="g7B-xf-Cre" customClass="RecipeDetailViewController" customModule="SwiftRecipes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bbz-kH-FGk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
-                        <autoresizingMask key="autoresizingMask"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yzo-pt-yL2">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="468.5"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ywi-TB-ao3">
+                                <rect key="frame" x="0.0" y="88" width="414" height="1329"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Penne Alla Vodka With Bacon" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRx-O6-AAO" customClass="PaddingLabel" customModule="SwiftRecipes" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="20" width="414" height="32.5"/>
-                                        <fontDescription key="fontDescription" name="Lobster-Regular" family="Lobster" pointSize="26"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
-                                                <real key="value" value="20"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
-                                                <real key="value" value="20"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Tjeu Foolen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QnS-uc-vbx" customClass="PaddingLabel" customModule="SwiftRecipes" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="52.5" width="414" height="18"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <color key="textColor" name="PrimaryColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
-                                                <real key="value" value="20"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
-                                                <real key="value" value="20"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="R0f-XD-Gqx" userLabel="Details">
-                                        <rect key="frame" x="0.0" y="70.5" width="414" height="105.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Pm9-FS-25s">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1013.5"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b6J-7l-YWB" userLabel="Servings">
-                                                <rect key="frame" x="20" y="20" width="374" height="18.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Penne Alla Vodka With Bacon" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0Z-4N-hdi" customClass="PaddingLabel" customModule="SwiftRecipes" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="20" width="414" height="32.5"/>
+                                                <fontDescription key="fontDescription" name="Lobster-Regular" family="Lobster" pointSize="26"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Tjeu Foolen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfM-aN-f8G" customClass="PaddingLabel" customModule="SwiftRecipes" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="52.5" width="414" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" name="PrimaryColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="dVt-Zh-mgu" userLabel="Details">
+                                                <rect key="frame" x="0.0" y="70.5" width="414" height="105.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Servings" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bzg-Rd-F8M" userLabel="Label">
-                                                        <rect key="frame" x="0.0" y="0.0" width="187" height="18.5"/>
-                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
-                                                        <color key="textColor" name="PrimaryColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1QR-xt-l6l" userLabel="Value">
-                                                        <rect key="frame" x="187" y="0.0" width="187" height="18.5"/>
-                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQe-6K-Mad" userLabel="Servings">
+                                                        <rect key="frame" x="20" y="20" width="374" height="18.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Servings" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEH-ZY-Apw" userLabel="Label">
+                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="18.5"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                                <color key="textColor" name="PrimaryColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eu2-lW-RRS" userLabel="Value">
+                                                                <rect key="frame" x="187" y="0.0" width="187" height="18.5"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pgu-Ah-jDj" userLabel="Preparation Time">
+                                                        <rect key="frame" x="20" y="43.5" width="374" height="18.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preparation Time" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yh3-vs-b3y" userLabel="Label">
+                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="18.5"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                                <color key="textColor" name="PrimaryColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 minutes" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pah-JG-EGZ" userLabel="Value">
+                                                                <rect key="frame" x="187" y="0.0" width="187" height="18.5"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P1c-dt-pDM">
+                                                        <rect key="frame" x="20" y="67" width="374" height="18.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cooking Time" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBz-B0-WYM" userLabel="Label">
+                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="18.5"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                                <color key="textColor" name="PrimaryColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 minutes" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMI-mh-RPC" userLabel="View">
+                                                                <rect key="frame" x="187" y="0.0" width="187" height="18.5"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
+                                                <edgeInsets key="layoutMargins" top="20" left="20" bottom="20" right="20"/>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fh8-Il-E1A" userLabel="Preparation Time">
-                                                <rect key="frame" x="20" y="43.5" width="374" height="18.5"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preparation Time" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erZ-zS-dvv" userLabel="Label">
-                                                        <rect key="frame" x="0.0" y="0.0" width="187" height="18.5"/>
-                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
-                                                        <color key="textColor" name="PrimaryColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 minutes" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Qy-c5-AhH" userLabel="Value">
-                                                        <rect key="frame" x="187" y="0.0" width="187" height="18.5"/>
-                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredients" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvm-XH-2GP" userLabel="Ingredients" customClass="PaddingLabel" customModule="SwiftRecipes" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="176" width="414" height="72.5"/>
+                                                <color key="backgroundColor" name="DarkerPrimaryColor"/>
+                                                <fontDescription key="fontDescription" name="Lobster-Regular" family="Lobster" pointSize="26"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="38Z-x2-kNt" userLabel="Ingredients List">
+                                                <rect key="frame" x="0.0" y="248.5" width="414" height="200"/>
+                                                <edgeInsets key="layoutMargins" top="20" left="20" bottom="20" right="20"/>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rbX-wn-Z0Q">
-                                                <rect key="frame" x="20" y="67" width="374" height="18.5"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cooking Time" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xwe-fL-jtD" userLabel="Label">
-                                                        <rect key="frame" x="0.0" y="0.0" width="187" height="18.5"/>
-                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
-                                                        <color key="textColor" name="PrimaryColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 minutes" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPt-GY-SR6" userLabel="View">
-                                                        <rect key="frame" x="187" y="0.0" width="187" height="18.5"/>
-                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Instructions" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tA9-2q-yQc" userLabel="Instructions" customClass="PaddingLabel" customModule="SwiftRecipes" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="448.5" width="414" height="72.5"/>
+                                                <color key="backgroundColor" name="DarkerPrimaryColor"/>
+                                                <fontDescription key="fontDescription" name="Lobster-Regular" family="Lobster" pointSize="26"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hmw-Ox-yz1" userLabel="Instructions List">
+                                                <rect key="frame" x="0.0" y="521" width="414" height="200"/>
+                                                <edgeInsets key="layoutMargins" top="20" left="20" bottom="20" right="20"/>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Nutrition" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6d5-ir-Uqw" userLabel="Nutrition" customClass="PaddingLabel" customModule="SwiftRecipes" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="721" width="414" height="72.5"/>
+                                                <color key="backgroundColor" name="DarkerPrimaryColor"/>
+                                                <fontDescription key="fontDescription" name="Lobster-Regular" family="Lobster" pointSize="26"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="WeD-Su-dSh" userLabel="Nutrition List">
+                                                <rect key="frame" x="0.0" y="793.5" width="414" height="200"/>
+                                                <edgeInsets key="layoutMargins" top="20" left="20" bottom="20" right="20"/>
                                             </stackView>
                                         </subviews>
-                                        <edgeInsets key="layoutMargins" top="20" left="20" bottom="20" right="20"/>
-                                    </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredients" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKu-YI-NbR" userLabel="Ingredients" customClass="PaddingLabel" customModule="SwiftRecipes" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="176" width="414" height="72.5"/>
-                                        <color key="backgroundColor" name="DarkerPrimaryColor"/>
-                                        <fontDescription key="fontDescription" name="Lobster-Regular" family="Lobster" pointSize="26"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
-                                                <real key="value" value="20"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
-                                                <real key="value" value="20"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
-                                                <real key="value" value="20"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
-                                                <real key="value" value="20"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="JNS-1d-eCT" userLabel="Ingredients List">
-                                        <rect key="frame" x="0.0" y="248.5" width="414" height="200"/>
-                                        <edgeInsets key="layoutMargins" top="20" left="20" bottom="20" right="20"/>
+                                        <color key="backgroundColor" name="DarkestPrimaryColor"/>
+                                        <edgeInsets key="layoutMargins" top="20" left="0.0" bottom="20" right="0.0"/>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" name="DarkestPrimaryColor"/>
-                                <edgeInsets key="layoutMargins" top="20" left="0.0" bottom="20" right="0.0"/>
-                            </stackView>
+                                <constraints>
+                                    <constraint firstItem="Pm9-FS-25s" firstAttribute="bottom" secondItem="8Us-TQ-wUE" secondAttribute="bottom" id="55l-f6-tBL"/>
+                                    <constraint firstItem="Pm9-FS-25s" firstAttribute="top" secondItem="8Us-TQ-wUE" secondAttribute="top" id="5xH-dc-pHk"/>
+                                    <constraint firstItem="Pm9-FS-25s" firstAttribute="width" secondItem="ebI-YU-U3q" secondAttribute="width" id="OgS-jo-H5D"/>
+                                    <constraint firstItem="Pm9-FS-25s" firstAttribute="trailing" secondItem="8Us-TQ-wUE" secondAttribute="trailing" id="Rda-gn-quT"/>
+                                    <constraint firstItem="Pm9-FS-25s" firstAttribute="leading" secondItem="8Us-TQ-wUE" secondAttribute="leading" id="oev-rn-ZbE"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="8Us-TQ-wUE"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="ebI-YU-U3q"/>
+                            </scrollView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="jfn-xl-XcD"/>
+                        <viewLayoutGuide key="safeArea" id="oTX-OM-lzZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="yzo-pt-yL2" firstAttribute="bottom" secondItem="aIl-r2-gHA" secondAttribute="bottom" id="5q7-Ty-6s0"/>
-                            <constraint firstItem="yzo-pt-yL2" firstAttribute="width" secondItem="o7d-pF-owB" secondAttribute="width" id="AAD-EV-I90"/>
-                            <constraint firstItem="yzo-pt-yL2" firstAttribute="leading" secondItem="aIl-r2-gHA" secondAttribute="leading" id="b5n-xw-aS3"/>
-                            <constraint firstItem="yzo-pt-yL2" firstAttribute="trailing" secondItem="aIl-r2-gHA" secondAttribute="trailing" id="hZD-2r-FDx"/>
-                            <constraint firstItem="yzo-pt-yL2" firstAttribute="top" secondItem="aIl-r2-gHA" secondAttribute="top" id="mKz-Lp-zGv"/>
+                            <constraint firstItem="oTX-OM-lzZ" firstAttribute="bottom" secondItem="ywi-TB-ao3" secondAttribute="bottom" id="QJ2-fE-2DO"/>
+                            <constraint firstItem="oTX-OM-lzZ" firstAttribute="trailing" secondItem="ywi-TB-ao3" secondAttribute="trailing" id="k8w-JR-zE9"/>
+                            <constraint firstItem="ywi-TB-ao3" firstAttribute="top" secondItem="oTX-OM-lzZ" secondAttribute="top" id="qZ2-Lp-9uk"/>
+                            <constraint firstItem="ywi-TB-ao3" firstAttribute="leading" secondItem="oTX-OM-lzZ" secondAttribute="leading" id="u77-yy-1ct"/>
                         </constraints>
-                        <viewLayoutGuide key="contentLayoutGuide" id="aIl-r2-gHA"/>
-                        <viewLayoutGuide key="frameLayoutGuide" id="o7d-pF-owB"/>
-                    </scrollView>
-                    <navigationItem key="navigationItem" id="fzH-XO-upk"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GJ8-zi-tub"/>
                     <size key="freeformSize" width="414" height="1500"/>
                     <connections>
-                        <outlet property="creditsLabel" destination="QnS-uc-vbx" id="PBg-Lh-wON"/>
-                        <outlet property="ingredientsStack" destination="JNS-1d-eCT" id="xWO-WC-gdg"/>
-                        <outlet property="nameLabel" destination="NRx-O6-AAO" id="Uic-Vd-179"/>
+                        <outlet property="creditsLabel" destination="GfM-aN-f8G" id="R1C-jb-Ixj"/>
+                        <outlet property="ingredientsStack" destination="38Z-x2-kNt" id="eYp-pE-RmH"/>
+                        <outlet property="instructionsStack" destination="hmw-Ox-yz1" id="9dg-nr-Oun"/>
+                        <outlet property="nameLabel" destination="T0Z-4N-hdi" id="1hY-Zi-8NS"/>
+                        <outlet property="nutritionStack" destination="WeD-Su-dSh" id="xUi-rA-ZGZ"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1H2-tT-i8l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="axZ-kc-va4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1504" y="-579"/>
+            <point key="canvasLocation" x="1635" y="-579"/>
         </scene>
         <!--Recipes-->
         <scene sceneID="lcb-52-xZR">
@@ -244,7 +307,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="rQq-98-AVe" kind="show" id="Sew-RG-MDQ"/>
+                                    <segue destination="g7B-xf-Cre" kind="show" id="SqX-2H-9iD"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -304,14 +367,20 @@
         </scene>
     </scenes>
     <designables>
-        <designable name="IKu-YI-NbR">
-            <size key="intrinsicContentSize" width="155" height="72.5"/>
+        <designable name="6d5-ir-Uqw">
+            <size key="intrinsicContentSize" width="131.5" height="72.5"/>
         </designable>
-        <designable name="NRx-O6-AAO">
+        <designable name="GfM-aN-f8G">
+            <size key="intrinsicContentSize" width="141" height="18"/>
+        </designable>
+        <designable name="T0Z-4N-hdi">
             <size key="intrinsicContentSize" width="348" height="32.5"/>
         </designable>
-        <designable name="QnS-uc-vbx">
-            <size key="intrinsicContentSize" width="141" height="18"/>
+        <designable name="jvm-XH-2GP">
+            <size key="intrinsicContentSize" width="155" height="72.5"/>
+        </designable>
+        <designable name="tA9-2q-yQc">
+            <size key="intrinsicContentSize" width="159.5" height="72.5"/>
         </designable>
     </designables>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

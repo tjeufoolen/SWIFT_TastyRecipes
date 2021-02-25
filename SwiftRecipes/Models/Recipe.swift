@@ -38,6 +38,8 @@ struct Recipe : Codable {
         }
     }
     
+    var instructions: [Instruction]?
+    
     var num_servings: Int?
     
     var tips_and_ratings_enabled: Bool?
@@ -62,6 +64,10 @@ struct IngredientSection: Codable {
 
 struct IngredientComponent: Codable {
     var raw_text: String?
+}
+
+struct Instruction : Codable {
+    var display_text: String?
 }
 
 struct UserRating : Codable {
