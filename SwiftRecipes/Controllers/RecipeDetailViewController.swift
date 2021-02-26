@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import WebKit
 
 class RecipeDetailViewController: UIViewController {
 
@@ -13,6 +14,8 @@ class RecipeDetailViewController: UIViewController {
 
     @IBOutlet weak var nameLabel: PaddingLabel!
     @IBOutlet weak var creditsLabel: PaddingLabel!
+    @IBOutlet weak var thumbnailButton: UIButton!
+    @IBOutlet weak var videoFrame: WKWebView!
     @IBOutlet weak var ingredientsLabel: PaddingLabel!
     @IBOutlet weak var ingredientsStack: UIStackView!
     @IBOutlet weak var instructionsLabel: PaddingLabel!
@@ -26,6 +29,7 @@ class RecipeDetailViewController: UIViewController {
         if let recipe = recipe {
             nameLabel.text = recipe.name
             loadCredits(recipe)
+            loadThumbnail(recipe)
             loadIngredients(recipe)
             loadInstructions(recipe)
             loadNutrition(recipe)
@@ -47,11 +51,27 @@ class RecipeDetailViewController: UIViewController {
         }
         creditsLabel.text = str
     }
+    
+    private func loadThumbnail(_ recipe: Recipe) {
+        if let _ = recipe.original_video_url {
+            thumbnailButton.downloaded(from: recipe.thumbnail_url, for: .normal)
+            thumbnailButton.isHidden = false
+        } else {
+            thumbnailButton.isHidden = true
+        }
+    }
+    
+    @IBAction func playVideo(_ sender: Any) {
+        if let recipe = recipe, let videoUrl = recipe.original_video_url {
+            let request = URLRequest(url: videoUrl)
+            videoFrame.load(request)
+        }
+    }
 
     private func loadIngredients(_ recipe: Recipe) {
         if recipe.ingredients.count > 0 {
             for ingredient in recipe.ingredients {
-                let label = createLabel(text: " -    \(ingredient)", color: .white, fontSize: 16, lines: 3)
+                let label = createLabel(text: " -    \(ingredient)", color: .white, fontSize: 16)
                 ingredientsStack.addArrangedSubview(label)
             }
             ingredientsLabel.isHidden = false
@@ -66,7 +86,7 @@ class RecipeDetailViewController: UIViewController {
                 for index in 0..<instructions.count {
                     let instruction = instructions[index]
                     if let text = instruction.display_text {
-                        let label = createLabel(text: " \(index+1).    \(text)", color: .white, fontSize: 16, lines: 10)
+                        let label = createLabel(text: " \(index+1).    \(text)", color: .white, fontSize: 16)
                         instructionsStack.addArrangedSubview(label)
                     }
                 }
@@ -121,21 +141,21 @@ class RecipeDetailViewController: UIViewController {
         stack.axis = .horizontal
 
         // create and add label
-        let label = createLabel(text: text, color: .white, fontSize: 16, lines: 1)
+        let label = createLabel(text: text, color: .white, fontSize: 16)
         stack.addArrangedSubview(label)
 
         // create and add value
-        let value = createLabel(text: String(value), color: .white, fontSize: 16, lines: 1)
+        let value = createLabel(text: String(value), color: .white, fontSize: 16)
         value.textAlignment = .right
         stack.addArrangedSubview(value)
 
         return stack
     }
 
-    private func createLabel(text: String, color: UIColor, fontSize: CGFloat, lines: Int) -> UILabel {
+    private func createLabel(text: String, color: UIColor, fontSize: CGFloat) -> UILabel {
         let label = UILabel()
         label.lineBreakMode = NSLineBreakMode.byWordWrapping
-        label.numberOfLines = lines
+        label.numberOfLines = 0
         label.text = text
         label.font = label.font.withSize(fontSize)
         label.textColor = color

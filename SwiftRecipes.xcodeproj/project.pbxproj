@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A31763825E8FBB400A73417 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A31763725E8FBB400A73417 /* UIButtonExtension.swift */; };
 		1A46289C25E6801C00D8510B /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A46289B25E6801C00D8510B /* UIColorExtension.swift */; };
 		1A72291A25E650FE00AC1A26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A72291925E650FE00AC1A26 /* AppDelegate.swift */; };
 		1A72291C25E650FE00AC1A26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A72291B25E650FE00AC1A26 /* SceneDelegate.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A31763725E8FBB400A73417 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		1A46289B25E6801C00D8510B /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		1A72291625E650FE00AC1A26 /* SwiftRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A72291925E650FE00AC1A26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				1A46289B25E6801C00D8510B /* UIColorExtension.swift */,
+				1A31763725E8FBB400A73417 /* UIButtonExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				1AAE0EA325E68E0F00326377 /* FavoritesListViewController.swift in Sources */,
 				1A46289C25E6801C00D8510B /* UIColorExtension.swift in Sources */,
 				1A72291A25E650FE00AC1A26 /* AppDelegate.swift in Sources */,
+				1A31763825E8FBB400A73417 /* UIButtonExtension.swift in Sources */,
 				1AAE0EAB25E6B40800326377 /* PaddingLabel.swift in Sources */,
 				1A72293925E661C700AC1A26 /* TastyAPI.swift in Sources */,
 				1A72291C25E650FE00AC1A26 /* SceneDelegate.swift in Sources */,

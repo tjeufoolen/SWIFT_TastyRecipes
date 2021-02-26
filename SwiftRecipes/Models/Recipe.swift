@@ -15,7 +15,7 @@ struct Recipe : Codable {
     var name: String
     var description: String?
     var thumbnail_url: URL
-    var video_url: URL?
+    var original_video_url: URL?
     
     var credits: [Creator]?
     
