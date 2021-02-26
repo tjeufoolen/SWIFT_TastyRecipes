@@ -10,8 +10,13 @@ import WebKit
 
 class RecipeDetailViewController: UIViewController {
 
+    // MARK: - Instance variables
     var recipe: Recipe? = nil
+    let favoriteRecipeRepository = FavoriteRecipeRepository()
 
+    // MARK: - UIElement outlets
+    @IBOutlet weak var favoriteButton: UIBarButtonItem!
+    
     @IBOutlet weak var nameLabel: PaddingLabel!
     @IBOutlet weak var creditsLabel: PaddingLabel!
     @IBOutlet weak var thumbnailButton: UIButton!
@@ -23,16 +28,28 @@ class RecipeDetailViewController: UIViewController {
     @IBOutlet weak var nutritionLabel: PaddingLabel!
     @IBOutlet weak var nutritionStack: UIStackView!
     
+    // MARK: - Onload
     override func viewDidLoad() {
         super.viewDidLoad()
         
         if let recipe = recipe {
+            updateFavoriteButton(recipe)
+            
             nameLabel.text = recipe.name
             loadCredits(recipe)
             loadThumbnail(recipe)
             loadIngredients(recipe)
             loadInstructions(recipe)
             loadNutrition(recipe)
+        }
+    }
+    
+    // MARK: - View building
+    private func updateFavoriteButton(_ recipe: Recipe) {
+        if self.favoriteRecipeRepository.isFavorite(recipe) {
+            favoriteButton.title = "Unfavorite"
+        } else {
+            favoriteButton.title = "Favorite"
         }
     }
     
@@ -58,13 +75,6 @@ class RecipeDetailViewController: UIViewController {
             thumbnailButton.isHidden = false
         } else {
             thumbnailButton.isHidden = true
-        }
-    }
-    
-    @IBAction func playVideo(_ sender: Any) {
-        if let recipe = recipe, let videoUrl = recipe.original_video_url {
-            let request = URLRequest(url: videoUrl)
-            videoFrame.load(request)
         }
     }
 
@@ -135,7 +145,22 @@ class RecipeDetailViewController: UIViewController {
             nutritionLabel.isHidden = (itemsShown == 0)
         }
     }
-
+    
+    // MARK: - Actions
+    @IBAction func playVideo(_ sender: Any) {
+        if let recipe = recipe, let videoUrl = recipe.original_video_url {
+            let request = URLRequest(url: videoUrl)
+            videoFrame.load(request)
+        }
+    }
+    @IBAction func toggleFavorite(_ sender: Any) {
+        if let recipe = recipe {
+            self.favoriteRecipeRepository.toggleFavorite(recipe)
+            updateFavoriteButton(recipe)
+        }
+    }
+    
+    // MARK: - Helpers
     private func createNutritionRow(label text: String, value: Double) -> UIStackView {
         let stack = UIStackView()
         stack.axis = .horizontal
@@ -151,7 +176,7 @@ class RecipeDetailViewController: UIViewController {
 
         return stack
     }
-
+    
     private func createLabel(text: String, color: UIColor, fontSize: CGFloat) -> UILabel {
         let label = UILabel()
         label.lineBreakMode = NSLineBreakMode.byWordWrapping

@@ -280,10 +280,17 @@
                             <constraint firstItem="ywi-TB-ao3" firstAttribute="leading" secondItem="oTX-OM-lzZ" secondAttribute="leading" id="u77-yy-1ct"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="GJ8-zi-tub"/>
+                    <navigationItem key="navigationItem" id="GJ8-zi-tub">
+                        <barButtonItem key="rightBarButtonItem" title="Favorite" id="Rhh-Bq-PRl">
+                            <connections>
+                                <action selector="toggleFavorite:" destination="g7B-xf-Cre" id="9Za-5T-W28"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <size key="freeformSize" width="414" height="1500"/>
                     <connections>
                         <outlet property="creditsLabel" destination="GfM-aN-f8G" id="R1C-jb-Ixj"/>
+                        <outlet property="favoriteButton" destination="Rhh-Bq-PRl" id="RJv-vz-K2e"/>
                         <outlet property="ingredientsLabel" destination="jvm-XH-2GP" id="BIB-I4-w1S"/>
                         <outlet property="ingredientsStack" destination="38Z-x2-kNt" id="eYp-pE-RmH"/>
                         <outlet property="instructionsLabel" destination="tA9-2q-yQc" id="B0O-35-U90"/>

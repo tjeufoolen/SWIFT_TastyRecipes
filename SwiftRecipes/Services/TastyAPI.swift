@@ -12,6 +12,7 @@ class TastyAPI {
     private let baseUrl = "https://tasty.p.rapidapi.com"
     private let decoder = JSONDecoder()
     
+    // MARK: - Fetch methods
     public func fetchRecipes(query: String, completionHandler: @escaping ((_ recipes: [Recipe]) -> Void)) {
         if let request = buildRequest(url: "\(baseUrl)/recipes/list?\(query)") {
             executeRequest(request) { data in
@@ -43,6 +44,7 @@ class TastyAPI {
         completionHandler(nil)
     }
     
+    // MARK: - Helpers
     private func buildRequest(url requestUrl: String) -> URLRequest? {
         if Environment.tasty_api_key.isEmpty {
             print("TASTY_API_KEY is empty. \nPlease fill in the tasty_api_key credentials inside Configs/Development.xcconfig.")

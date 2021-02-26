@@ -49,3 +49,4 @@ TastyAPI().fetchRecipes(query: "from=0&size=20&tags=under_30_minutes") { recipes
 - [Creating a Free Form View Controller](https://guides.codepath.com/ios/Creating-a-Free-Form-View-Controller)
 - [How to add Padding in UILabel in iOS using Swift](https://johncodeos.com/how-to-add-padding-in-uilabel-in-ios-using-swift/)
 - [Loading/Downloading image from URL on Swift](https://stackoverflow.com/questions/24231680/loading-downloading-image-from-url-on-swift)
+- [How to Store a Custom Object in User Defaults in Swift](https://cocoacasts.com/ud-5-how-to-store-a-custom-object-in-user-defaults-in-swift)
