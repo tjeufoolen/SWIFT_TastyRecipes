@@ -7,10 +7,12 @@
 
 import UIKit
 
-class FavoritesListViewController: UIViewController {
-
+class FavoritesListViewController: RecipeListTableViewController {
     // MARK: - Onload
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        recipes = FavoriteRecipeRepository().getFavorites()
+        self.tableView.reloadData()
     }
 }

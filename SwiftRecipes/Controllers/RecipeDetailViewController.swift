@@ -78,8 +78,9 @@ class RecipeDetailViewController: UIViewController {
     }
 
     private func loadIngredients(_ recipe: Recipe) {
-        if recipe.ingredients.count > 0 {
-            ingredientsStack.clear()
+        ingredientsStack.clear()
+        
+        if !recipe.ingredients.isEmpty {
             for ingredient in recipe.ingredients {
                 let label = createLabel(text: " -    \(ingredient)", color: .white, fontSize: 16)
                 ingredientsStack.addArrangedSubview(label)
@@ -91,9 +92,10 @@ class RecipeDetailViewController: UIViewController {
     }
 
     private func loadInstructions(_ recipe: Recipe) {
+        instructionsStack.clear()
+        
         if let instructions = recipe.instructions {
-            if instructions.count > 0 {
-                instructionsStack.clear()
+            if !instructions.isEmpty {
                 for index in 0..<instructions.count {
                     let instruction = instructions[index]
                     if let text = instruction.display_text {
@@ -109,10 +111,10 @@ class RecipeDetailViewController: UIViewController {
     }
 
     private func loadNutrition(_ recipe: Recipe) {
+        nutritionStack.clear()
+        
         if let nutrition = recipe.nutrition {
             var itemsShown: Int = 0
-            
-            nutritionStack.clear()
             
             if let calories = nutrition.calories {
                 let row = createNutritionRow(label: "calories", value: calories)
