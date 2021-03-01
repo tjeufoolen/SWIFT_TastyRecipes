@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A2331BB25ED5F6D0011FFD8 /* UIStackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2331BA25ED5F6D0011FFD8 /* UIStackViewExtension.swift */; };
 		1A31763825E8FBB400A73417 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A31763725E8FBB400A73417 /* UIButtonExtension.swift */; };
 		1A31763D25E90CF900A73417 /* FavoriteRecipeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A31763C25E90CF900A73417 /* FavoriteRecipeRepository.swift */; };
 		1A46289C25E6801C00D8510B /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A46289B25E6801C00D8510B /* UIColorExtension.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A2331BA25ED5F6D0011FFD8 /* UIStackViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewExtension.swift; sourceTree = "<group>"; };
 		1A31763725E8FBB400A73417 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		1A31763C25E90CF900A73417 /* FavoriteRecipeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRecipeRepository.swift; sourceTree = "<group>"; };
 		1A46289B25E6801C00D8510B /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			children = (
 				1A46289B25E6801C00D8510B /* UIColorExtension.swift */,
 				1A31763725E8FBB400A73417 /* UIButtonExtension.swift */,
+				1A2331BA25ED5F6D0011FFD8 /* UIStackViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				1A46289C25E6801C00D8510B /* UIColorExtension.swift in Sources */,
 				1A72291A25E650FE00AC1A26 /* AppDelegate.swift in Sources */,
 				1A31763825E8FBB400A73417 /* UIButtonExtension.swift in Sources */,
+				1A2331BB25ED5F6D0011FFD8 /* UIStackViewExtension.swift in Sources */,
 				1AAE0EAB25E6B40800326377 /* PaddingLabel.swift in Sources */,
 				1A72293925E661C700AC1A26 /* TastyAPI.swift in Sources */,
 				1A72291C25E650FE00AC1A26 /* SceneDelegate.swift in Sources */,

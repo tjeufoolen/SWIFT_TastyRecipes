@@ -20,7 +20,6 @@ class RecipeDetailViewController: UIViewController {
     @IBOutlet weak var nameLabel: PaddingLabel!
     @IBOutlet weak var creditsLabel: PaddingLabel!
     @IBOutlet weak var thumbnailButton: UIButton!
-    @IBOutlet weak var videoFrame: WKWebView!
     @IBOutlet weak var ingredientsLabel: PaddingLabel!
     @IBOutlet weak var ingredientsStack: UIStackView!
     @IBOutlet weak var instructionsLabel: PaddingLabel!
@@ -80,6 +79,7 @@ class RecipeDetailViewController: UIViewController {
 
     private func loadIngredients(_ recipe: Recipe) {
         if recipe.ingredients.count > 0 {
+            ingredientsStack.clear()
             for ingredient in recipe.ingredients {
                 let label = createLabel(text: " -    \(ingredient)", color: .white, fontSize: 16)
                 ingredientsStack.addArrangedSubview(label)
@@ -93,6 +93,7 @@ class RecipeDetailViewController: UIViewController {
     private func loadInstructions(_ recipe: Recipe) {
         if let instructions = recipe.instructions {
             if instructions.count > 0 {
+                instructionsStack.clear()
                 for index in 0..<instructions.count {
                     let instruction = instructions[index]
                     if let text = instruction.display_text {
@@ -110,6 +111,8 @@ class RecipeDetailViewController: UIViewController {
     private func loadNutrition(_ recipe: Recipe) {
         if let nutrition = recipe.nutrition {
             var itemsShown: Int = 0
+            
+            nutritionStack.clear()
             
             if let calories = nutrition.calories {
                 let row = createNutritionRow(label: "calories", value: calories)
@@ -149,8 +152,7 @@ class RecipeDetailViewController: UIViewController {
     // MARK: - Actions
     @IBAction func playVideo(_ sender: Any) {
         if let recipe = recipe, let videoUrl = recipe.original_video_url {
-            let request = URLRequest(url: videoUrl)
-            videoFrame.load(request)
+            UIApplication.shared.open(videoUrl);
         }
     }
     @IBAction func toggleFavorite(_ sender: Any) {
