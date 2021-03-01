@@ -9,8 +9,8 @@ import UIKit
 
 class FavoritesListViewController: UIViewController {
 
+    // MARK: - Onload
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
 }

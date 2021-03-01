@@ -9,8 +9,10 @@ import UIKit
 
 class RecipeListViewController: UITableViewController {
 
+    // MARK: - Instance variables
     var recipes: [Recipe] = []
     
+    // MARK: - Onload
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,6 +24,7 @@ class RecipeListViewController: UITableViewController {
         }
     }
     
+    // MARK: - View building
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.recipes.count
     }
@@ -39,5 +42,11 @@ class RecipeListViewController: UITableViewController {
         return cell
     }
 
+    // MARK: - View data transfer
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let detailController = segue.destination as? RecipeDetailViewController {
+            detailController.recipe = recipes[self.tableView.indexPathForSelectedRow!.row]
+        }
+    }
 }
 
