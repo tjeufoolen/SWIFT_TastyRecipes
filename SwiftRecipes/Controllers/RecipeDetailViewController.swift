@@ -12,6 +12,8 @@ class RecipeDetailViewController: UIViewController {
 
     // MARK: - Instance variables
     var recipe: Recipe? = nil
+    var recipeHasVideo: Bool = true
+    
     let favoriteRecipeRepository = FavoriteRecipeRepository()
     let recipeNotesRepository = RecipeNotesRepository()
 
@@ -20,6 +22,7 @@ class RecipeDetailViewController: UIViewController {
     
     @IBOutlet weak var nameLabel: PaddingLabel!
     @IBOutlet weak var creditsLabel: PaddingLabel!
+    @IBOutlet weak var watchVideoButton: UIButton!
     @IBOutlet weak var thumbnailButton: UIButton!
     @IBOutlet weak var ingredientsLabel: PaddingLabel!
     @IBOutlet weak var ingredientsStack: UIStackView!
@@ -30,7 +33,7 @@ class RecipeDetailViewController: UIViewController {
     
     @IBOutlet weak var notesTextView: UITextView!
     
-    // MARK: - Onload
+    // MARK: - OnLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -45,6 +48,12 @@ class RecipeDetailViewController: UIViewController {
             loadNutrition(recipe)
             loadNotes(recipe)
         }
+    }
+    
+    // MARK: - Orientation change
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        showHideWatchButtons()
     }
     
     // MARK: - View building
@@ -75,9 +84,11 @@ class RecipeDetailViewController: UIViewController {
     private func loadThumbnail(_ recipe: Recipe) {
         if let _ = recipe.original_video_url {
             thumbnailButton.downloaded(from: recipe.thumbnail_url, for: .normal)
-            thumbnailButton.isHidden = false
+            recipeHasVideo = true;
         } else {
             thumbnailButton.isHidden = true
+            watchVideoButton.isHidden = true
+            recipeHasVideo = false;
         }
     }
 
@@ -209,5 +220,12 @@ class RecipeDetailViewController: UIViewController {
         label.font = label.font.withSize(fontSize)
         label.textColor = color
         return label
+    }
+    
+    private func showHideWatchButtons() {
+        if (recipeHasVideo) {
+            watchVideoButton.isHidden = UIDevice.current.orientation.isPortrait;
+            thumbnailButton.isHidden = UIDevice.current.orientation.isLandscape;
+        }
     }
 }
