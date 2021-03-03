@@ -436,11 +436,12 @@
                     <connections>
                         <segue destination="K1p-8W-QHU" kind="relationship" relationship="viewControllers" id="gcw-34-iQR"/>
                         <segue destination="Mtv-IA-laM" kind="relationship" relationship="viewControllers" id="sTi-i5-B14"/>
+                        <segue destination="GGT-R8-nHy" kind="relationship" relationship="viewControllers" id="hdy-8F-Tho"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="igb-hP-9dG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1135" y="-579"/>
+            <point key="canvasLocation" x="-1417" y="147"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="bjZ-GE-pYx">
@@ -490,6 +491,116 @@
             </objects>
             <point key="canvasLocation" x="703" y="147"/>
         </scene>
+        <!--Credits-->
+        <scene sceneID="RZY-Nj-ZGi">
+            <objects>
+                <navigationController id="GGT-R8-nHy" customClass="NavigationViewController" customModule="SwiftRecipes" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Credits" image="heart.fill" catalog="system" id="jHP-sA-chC"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XSq-4s-K2y">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="PrimaryColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Lobster-Regular" family="Lobster" pointSize="26"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="mqH-Jx-sVf" kind="relationship" relationship="rootViewController" id="SL8-Ad-lv1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="csD-bi-xot" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-88" y="879"/>
+        </scene>
+        <!--Credits-->
+        <scene sceneID="ZSk-2z-7Qh">
+            <objects>
+                <viewController id="mqH-Jx-sVf" customClass="CreditsViewController" customModule="SwiftRecipes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ohE-O9-ndh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SJ3-pf-vNf" userLabel="Content">
+                                <rect key="frame" x="0.0" y="88" width="414" height="265"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This app has been build with #Love♥️.  Please follow me to stay tuned for future projects!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urA-pM-SBV" userLabel="title" customClass="PaddingLabel" customModule="SwiftRecipes" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="142"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                <real key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="g67-tG-Xjy" userLabel="links">
+                                        <rect key="frame" x="0.0" y="142" width="414" height="123"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tjeu Foolen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gor-OF-ni6" userLabel="Tjeu Foolen" customClass="PaddingLabel" customModule="SwiftRecipes" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="20" width="374" height="45"/>
+                                                <fontDescription key="fontDescription" name="Lobster-Regular" family="Lobster" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Bw7-oj-dT4">
+                                                <rect key="frame" x="20" y="65" width="374" height="38"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yg-AG-xg4" userLabel="Github">
+                                                        <rect key="frame" x="0.0" y="0.0" width="182" height="38"/>
+                                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                                        <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                                        <state key="normal" title="Github"/>
+                                                        <connections>
+                                                            <action selector="openGithub:" destination="mqH-Jx-sVf" eventType="touchUpInside" id="PZ7-Rs-XPy"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5i-jV-lTI" userLabel="Twitter">
+                                                        <rect key="frame" x="192" y="0.0" width="182" height="38"/>
+                                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                                        <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                                        <state key="normal" title="Twitter"/>
+                                                        <connections>
+                                                            <action selector="openTwitter:" destination="mqH-Jx-sVf" eventType="touchUpInside" id="Sp7-d0-vqE"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="20" left="20" bottom="20" right="20"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WNn-hv-XUg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SJ3-pf-vNf" firstAttribute="width" secondItem="WNn-hv-XUg" secondAttribute="width" id="b2g-Wc-bvt"/>
+                            <constraint firstItem="SJ3-pf-vNf" firstAttribute="centerX" secondItem="WNn-hv-XUg" secondAttribute="centerX" id="lwG-az-det"/>
+                            <constraint firstItem="SJ3-pf-vNf" firstAttribute="top" secondItem="WNn-hv-XUg" secondAttribute="top" id="ugl-SD-Lcu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Credits" id="fcJ-Sc-1wP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sXk-mv-ak3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="702.89855072463774" y="878.57142857142856"/>
+        </scene>
     </scenes>
     <designables>
         <designable name="6d5-ir-Uqw">
@@ -501,6 +612,9 @@
         <designable name="T0Z-4N-hdi">
             <size key="intrinsicContentSize" width="348" height="32.5"/>
         </designable>
+        <designable name="gor-OF-ni6">
+            <size key="intrinsicContentSize" width="84.5" height="45"/>
+        </designable>
         <designable name="hbb-bQ-rt3">
             <size key="intrinsicContentSize" width="74" height="72.5"/>
         </designable>
@@ -510,6 +624,9 @@
         <designable name="tA9-2q-yQc">
             <size key="intrinsicContentSize" width="159.5" height="72.5"/>
         </designable>
+        <designable name="urA-pM-SBV">
+            <size key="intrinsicContentSize" width="472" height="118"/>
+        </designable>
     </designables>
     <inferredMetricsTieBreakers>
         <segue reference="TKw-W2-Rsz"/>
@@ -517,6 +634,7 @@
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="books.vertical.fill" catalog="system" width="128" height="100"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <namedColor name="DarkerPrimaryColor">
             <color red="0.59607843137254901" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -529,6 +647,9 @@
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

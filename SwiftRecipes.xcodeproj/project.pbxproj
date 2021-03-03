@@ -23,6 +23,7 @@
 		1A72294125E66B8D00AC1A26 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A72294025E66B8D00AC1A26 /* Environment.swift */; };
 		1A7316FA25EF9FBD006219CB /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7316F925EF9FBD006219CB /* AlertHelper.swift */; };
 		1A7316FD25EFA131006219CB /* RecipeNotesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7316FC25EFA131006219CB /* RecipeNotesRepository.swift */; };
+		1A73170025EFAA10006219CB /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7316FF25EFAA10006219CB /* CreditsViewController.swift */; };
 		1AAE0EA325E68E0F00326377 /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE0EA225E68E0F00326377 /* FavoritesListViewController.swift */; };
 		1AAE0EA725E69D1600326377 /* Lobster-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AAE0EA625E69D0A00326377 /* Lobster-Regular.ttf */; };
 		1AAE0EAB25E6B40800326377 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE0EAA25E6B40800326377 /* PaddingLabel.swift */; };
@@ -51,6 +52,7 @@
 		1A72294025E66B8D00AC1A26 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		1A7316F925EF9FBD006219CB /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		1A7316FC25EFA131006219CB /* RecipeNotesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeNotesRepository.swift; sourceTree = "<group>"; };
+		1A7316FF25EFAA10006219CB /* CreditsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		1AAE0EA225E68E0F00326377 /* FavoritesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListViewController.swift; sourceTree = "<group>"; };
 		1AAE0EA625E69D0A00326377 /* Lobster-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lobster-Regular.ttf"; sourceTree = "<group>"; };
 		1AAE0EAA25E6B40800326377 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				1AAE0EA225E68E0F00326377 /* FavoritesListViewController.swift */,
 				1A2331BD25ED63F40011FFD8 /* RecipeListTableViewController.swift */,
 				1A2331C325ED68120011FFD8 /* NavigationViewController.swift */,
+				1A7316FF25EFAA10006219CB /* CreditsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				1A2331C425ED68120011FFD8 /* NavigationViewController.swift in Sources */,
 				1A2331BB25ED5F6D0011FFD8 /* UIStackViewExtension.swift in Sources */,
 				1AAE0EAB25E6B40800326377 /* PaddingLabel.swift in Sources */,
+				1A73170025EFAA10006219CB /* CreditsViewController.swift in Sources */,
 				1A72293925E661C700AC1A26 /* TastyAPI.swift in Sources */,
 				1A2331BE25ED63F40011FFD8 /* RecipeListTableViewController.swift in Sources */,
 				1A72291C25E650FE00AC1A26 /* SceneDelegate.swift in Sources */,
