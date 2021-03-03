@@ -13,6 +13,7 @@ class RecipeDetailViewController: UIViewController {
     // MARK: - Instance variables
     var recipe: Recipe? = nil
     let favoriteRecipeRepository = FavoriteRecipeRepository()
+    let recipeNotesRepository = RecipeNotesRepository()
 
     // MARK: - UIElement outlets
     @IBOutlet weak var favoriteButton: UIBarButtonItem!
@@ -27,6 +28,8 @@ class RecipeDetailViewController: UIViewController {
     @IBOutlet weak var nutritionLabel: PaddingLabel!
     @IBOutlet weak var nutritionStack: UIStackView!
     
+    @IBOutlet weak var notesTextView: UITextView!
+    
     // MARK: - Onload
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +43,7 @@ class RecipeDetailViewController: UIViewController {
             loadIngredients(recipe)
             loadInstructions(recipe)
             loadNutrition(recipe)
+            loadNotes(recipe)
         }
     }
     
@@ -151,6 +155,10 @@ class RecipeDetailViewController: UIViewController {
         }
     }
     
+    private func loadNotes(_ recipe: Recipe) {
+        notesTextView.text = recipeNotesRepository.getNotes(recipe: recipe)
+    }
+    
     // MARK: - Actions
     @IBAction func playVideo(_ sender: Any) {
         if let recipe = recipe, let videoUrl = recipe.original_video_url {
@@ -161,6 +169,18 @@ class RecipeDetailViewController: UIViewController {
         if let recipe = recipe {
             self.favoriteRecipeRepository.toggleFavorite(recipe)
             updateFavoriteButton(recipe)
+        }
+    }
+    
+    @IBAction func saveNote(_ sender: Any) {
+        if let recipe = recipe {
+            recipeNotesRepository.setNotes(notes: notesTextView.text, recipe: recipe)
+            
+            let alert = AlertHelper().alert(title: "Saved", message: "Note has been saved succesfully!", actions: [
+                UIAlertAction(title: "Ok", style: .default)
+            ])
+            
+            self.present(alert, animated: true)
         }
     }
     
