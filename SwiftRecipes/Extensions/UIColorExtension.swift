@@ -29,6 +29,10 @@ import UIKit
     ]
     
     private static func color(named: String) -> UIColor {
-        return UIColor(named: named)!
+        if let color = UIColor(named: named) {
+            return color
+        } else {
+            return UIColor(red: 255, green: 255, blue: 255, alpha: 255)
+        }
     }
 }

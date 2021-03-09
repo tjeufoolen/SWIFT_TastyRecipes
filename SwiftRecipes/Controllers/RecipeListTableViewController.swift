@@ -32,7 +32,9 @@ class RecipeListTableViewController : UITableViewController {
     // MARK: - View data transfer
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let detailController = segue.destination as? RecipeDetailViewController {
-            detailController.recipe = recipes[self.tableView.indexPathForSelectedRow!.row]
+            if let path = self.tableView.indexPathForSelectedRow {
+                detailController.recipe = recipes[path.row]
+            }
         }
     }
 }
