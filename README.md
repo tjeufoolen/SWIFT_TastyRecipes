@@ -1,4 +1,4 @@
-# SwiftRecipes
+# SWIFT_TastyRecipesAPP
 This is the first app I have written using Swift.
 
 ## Prerequisites
