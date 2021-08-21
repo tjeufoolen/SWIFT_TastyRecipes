@@ -1,5 +1,5 @@
 # SwiftRecipes
-Final assignment project for the mobile development iOS course (MBDIOS).
+This is the first app I have written using Swift.
 
 ## Prerequisites
 - XCode 12.4
