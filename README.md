@@ -1,5 +1,5 @@
-# SWIFT_TastyRecipesAPP
-This is the first app I have written using Swift.
+# TastyRecipesAPP
+This is the first app I have written using Swift to learn more about the language and possibilities.
 
 ## Prerequisites
 - XCode 12.4
